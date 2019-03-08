@@ -13,5 +13,6 @@ class Scraper
     new_book.previous_award = separated_array = array.each_slice(5).to_a[1][4]
     new_book.title = doc.css(".pollAnswer__bookLink").css("img").first["alt"].split(" by ")[0]
     new_book.author = doc.css(".pollAnswer__bookLink").css("img").first["alt"].split(" by ")[1]
+    binding.pry
   end 
 end 
