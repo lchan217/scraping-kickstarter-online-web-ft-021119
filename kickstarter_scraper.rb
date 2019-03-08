@@ -2,9 +2,9 @@ require 'nokogiri'
 require 'pry'
 
 def create_project_hash
-  html = File.read('fixtures/kickstarter.html')
-  kickstarter = Nokogiri::HTML(html)
-  projects = {}
+  html = open('https://www.goodreads.com/choiceawards/best-of-the-best-2018')
+    doc = Nokogiri::HTML(html)
+    
   
  
 end
